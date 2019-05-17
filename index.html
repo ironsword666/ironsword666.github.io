@@ -331,7 +331,7 @@
                 
               
 
-              <time title="Erstellt: 2019-05-17 14:46:54 / Geändert am: 15:03:50" itemprop="dateCreated datePublished" datetime="2019-05-17T14:46:54+08:00">2019-05-17</time>
+              <time title="Erstellt: 2019-05-17 14:46:54 / Geändert am: 15:14:08" itemprop="dateCreated datePublished" datetime="2019-05-17T14:46:54+08:00">2019-05-17</time>
             
 
             
@@ -371,16 +371,17 @@
 
       
         
-          
-            <h1 id="hexo命令"><a href="#hexo命令" class="headerlink" title="hexo命令"></a>hexo命令</h1><p>1、创建一篇新博客</p>
+          <h1 id="hexo命令"><a href="#hexo命令" class="headerlink" title="hexo命令"></a>hexo命令</h1><p>1、创建一篇新博客</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;newBlogName&quot;</span><br></pre></td></tr></table></figure>
-<p>2、在public文件夹下生成静态文件并部署到github上</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方法1</span></span><br><span class="line">hexo g -d </span><br><span class="line"><span class="comment">// 方法2</span></span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-<h1 id="markdown技巧"><a href="#markdown技巧" class="headerlink" title="markdown技巧"></a>markdown技巧</h1><p>1、在hexo首页只显示每篇博客的开头内容</p>
-<p>在开头内容后另起一行，添加</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--more--&gt;</span></span><br></pre></td></tr></table></figure>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/05/17/hexo使用技巧总结/#more" rel="contents">
+                Weiterlesen &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -480,7 +481,7 @@
                 
               
 
-              <time title="Erstellt: 2019-05-17 14:36:39 / Geändert am: 14:45:02" itemprop="dateCreated datePublished" datetime="2019-05-17T14:36:39+08:00">2019-05-17</time>
+              <time title="Erstellt: 2019-05-17 14:36:39 / Geändert am: 15:13:28" itemprop="dateCreated datePublished" datetime="2019-05-17T14:36:39+08:00">2019-05-17</time>
             
 
             
@@ -520,19 +521,19 @@
 
       
         
-          
-            <p>转载自：<a href="https://blog.csdn.net/sugar_rainbow/article/details/57415705" target="_blank" rel="noopener">https://blog.csdn.net/sugar_rainbow/article/details/57415705</a></p>
+          <p>转载自：<a href="https://blog.csdn.net/sugar_rainbow/article/details/57415705" target="_blank" rel="noopener">https://blog.csdn.net/sugar_rainbow/article/details/57415705</a></p>
 <h1 id="在hexo中插入图片的方法"><a href="#在hexo中插入图片的方法" class="headerlink" title="在hexo中插入图片的方法"></a>在hexo中插入图片的方法</h1><h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>1 把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>这个选项设置为<code>true</code></p>
 <p>2 在你的hexo目录下执行这样一句话<code>npm install hexo-asset-image --save</code>，这是下载安装一个可以上传本地图片的插件，来自dalao：<a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="noopener">dalao的git</a></p>
 <p>3 等待一小段时间后，再运行<code>hexo n &quot;blogName&quot;</code>来生成md博文时，<code>/source/_posts</code>文件夹内除了<code>blogName.md</code>文件还有一个同名文件夹<code>./blogName</code></p>
-<h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>4 在<code>blogName.md</code>中想引入图片时，先把图片复制到<code>blogName</code>这个文件夹中，然后只需要在<code>blogName.md</code>中按照markdown的格式引入图片：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![你想输入的替代文字](blogName/图片名.jpg)</span><br></pre></td></tr></table></figure>
-<p><strong>注意：</strong> blogName是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入xxxx这个文件夹内就好了，很像引用相对路径。</p>
-<p>5 最后检查一下，<code>hexo g</code>生成页面后，进入<code>public\...\index.html</code>文件中查看相关字段，可以发现，html标签内的语句是<code>&lt;img src=&quot;.../blogName/图片名.jpg&quot;&gt;</code>，而不是<code>&lt;img src=&quot;blogName/图片名.jpg&gt;</code>。这很重要，关乎你的网页是否可以真正加载你想插入的图片。</p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>插入一张秦时明月焰灵姬的图片</p>
-<p><img src="/2019/05/17/在hexo中插入图片的方法/yanlingji.jpg" alt=""></p>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/05/17/在hexo中插入图片的方法/#more" rel="contents">
+                Weiterlesen &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>

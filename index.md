@@ -3,10 +3,6 @@ layout: default
 title: About
 ---
 
-<div class="hero">
-
-<div>
-
 # {{ site.name }}
 
 {{ site.position }}  
@@ -30,8 +26,26 @@ My research focuses on:
 - Chinese NLP
 - large language models for structured prediction
 
-</div>
+---
 
-<img src="{{ site.avatar }}" alt="avatar">
+## News
 
-</div>
+- **2025** ACL paper accepted.
+- **2025** Findings of ACL paper accepted.
+- **2024** Findings of ACL paper accepted.
+
+---
+
+## Selected Publications
+
+**Dynamic Head Selection for Neural Lexicalized Constituency Parsing**  
+Yang Hou, Zhenghua Li  
+ACL 2025
+
+[paper](#) · [code](#)
+
+**Span-based Semantic Role Labeling as Lexicalized Constituency Tree Parsing**  
+Yang Hou, Zhenghua Li  
+Findings of ACL 2025
+
+[paper](#)

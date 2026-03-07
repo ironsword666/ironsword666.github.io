@@ -1,22 +1,33 @@
 title: Yang Hou
+first_name: Yang
+last_name: Hou
+
+email: YOUR_EMAIL
+
 description: Academic homepage of Yang Hou
 
-name: Yang Hou
-position: PhD Student
-affiliation: School of Computer Science and Technology, Soochow University
-
-email: YOUR_EMAIL_HERE
-
-google_scholar: https://scholar.google.com/citations?user=1G-PhgwAAAAJ
-acl_anthology: https://aclanthology.org/people/yang-hou/
-github: https://github.com/ironsword666
-
-cv: /assets/files/cv.pdf
-avatar: /assets/img/avatar.jpg
-
-baseurl: ""
 url: "https://ironsword666.github.io"
+baseurl: ""
+
+profile:
+  align: right
+  image: avatar.jpg
+
+socials:
+  scholar_userid: 1G-PhgwAAAAJ
+  github_username: ironsword666
 
 markdown: kramdown
 kramdown:
   input: GFM
+
+plugins:
+  - jekyll-scholar
+  - jekyll-feed
+  - jekyll-seo-tag
+
+scholar:
+  source: _bibliography
+  bibliography: papers.bib
+  sort_by: year
+  order: descending

@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Publications
+layout: page
+title: publications
 permalink: /publications/
+nav: true
+nav_order: 2
 ---
 
-# Publications
-
-{% bibliography %}
+{% bibliography --group_by year --group_order descending %}

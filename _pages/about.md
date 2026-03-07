@@ -1,35 +1,23 @@
 ---
-layout: default
-title: About
+layout: about
+title: about
 permalink: /
+subtitle: PhD Student, School of Computer Science and Technology, Soochow University
+
+profile:
+  align: right
+  image: avatar.jpg
+  image_circular: false
+
+news: true
+selected_papers: true
+social: true
 ---
 
-# Yang Hou
+I am a PhD student at Soochow University, advised by Prof. Zhenghua Li.
 
-PhD Student  
-School of Computer Science and Technology  
-Soochow University
+My research interests include natural language processing, syntactic parsing, semantic role labeling, Chinese NLP, and large language models for structured prediction.
 
-Email: [{{ site.email }}](mailto:{{ site.email }})
+More specifically, I work on constituency parsing, dependency parsing, semantic role labeling, and the use of large language models for structured linguistic analysis.
 
-[Google Scholar](https://scholar.google.com/citations?user=1G-PhgwAAAAJ)  
-[ACL Anthology](https://aclanthology.org/people/yang-hou/)  
-[GitHub](https://github.com/ironsword666)
-
----
-
-## Research
-
-My research interests include:
-
-- syntactic parsing
-- semantic role labeling
-- Chinese NLP
-- large language models
-
----
-
-## News
-
-- ACL 2025 paper accepted
-- Findings ACL 2025 paper accepted
+You can find my publications on [ACL Anthology](https://aclanthology.org/people/yang-hou/) and [Google Scholar](https://scholar.google.com/citations?user=1G-PhgwAAAAJ).

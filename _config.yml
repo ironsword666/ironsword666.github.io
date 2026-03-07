@@ -1,33 +1,53 @@
 title: Yang Hou
 first_name: Yang
 last_name: Hou
-
-email: YOUR_EMAIL
-
+email: YOUR_EMAIL_HERE
 description: Academic homepage of Yang Hou
 
 url: "https://ironsword666.github.io"
 baseurl: ""
 
+lang: en
+navbar_fixed: true
+footer_fixed: true
+search_enabled: false
+
 profile:
   align: right
   image: avatar.jpg
+  image_circular: false
+  more_info: >
+    <p>PhD Student</p>
+    <p>School of Computer Science and Technology</p>
+    <p>Soochow University</p>
 
 socials:
   scholar_userid: 1G-PhgwAAAAJ
   github_username: ironsword666
+
+collections:
+  news:
+    output: true
+  projects:
+    output: true
 
 markdown: kramdown
 kramdown:
   input: GFM
 
 plugins:
-  - jekyll-scholar
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-scholar
 
 scholar:
   source: _bibliography
   bibliography: papers.bib
-  sort_by: year
+  bibliography_template: bib
+  style: apa
+  locale: en
+  sort_by: year,month
   order: descending
+  group_by: year
+  group_order: descending
+  query: "@*"

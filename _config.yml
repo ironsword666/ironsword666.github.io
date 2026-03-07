@@ -18,3 +18,5 @@ baseurl: ""
 url: "https://ironsword666.github.io"
 
 markdown: kramdown
+kramdown:
+  input: GFM

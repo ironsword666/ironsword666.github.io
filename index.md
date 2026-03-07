@@ -1,5 +1,6 @@
 ---
 layout: default
+title: About
 ---
 
 <div class="hero">
@@ -31,40 +32,6 @@ My research focuses on:
 
 </div>
 
-<img src="{{ site.avatar }}">
-
-</div>
-
----
-
-## News
-
-- **2025** ACL paper accepted.
-- **2025** Findings of ACL paper accepted.
-- **2024** Findings of ACL paper accepted.
-
----
-
-## Selected Publications
-
-<div class="pub">
-
-**Dynamic Head Selection for Neural Lexicalized Constituency Parsing**
-
-Yang Hou, Zhenghua Li  
-ACL 2025
-
-[paper](#) · [code](#)
-
-</div>
-
-<div class="pub">
-
-**Span-based Semantic Role Labeling as Lexicalized Constituency Tree Parsing**
-
-Yang Hou, Zhenghua Li  
-Findings of ACL 2025
-
-[paper](#)
+<img src="{{ site.avatar }}" alt="avatar">
 
 </div>

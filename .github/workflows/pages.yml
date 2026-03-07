@@ -27,17 +27,19 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
+          bundler-cache: true
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Build site
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --trace
+
+      - name: List built files
+        run: |
+          pwd
+          ls -la
+          ls -la _site || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4

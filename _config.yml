@@ -6,6 +6,11 @@ description: Academic homepage of Yang Hou
 
 url: "https://ironsword666.github.io"
 baseurl: ""
+theme_color: blue
+enable_darkmode: true
+navbar_fixed: true
+footer_fixed: true
+font: Inter
 
 include:
   - _pages
@@ -25,6 +30,11 @@ collections:
   projects:
     output: true
 
+third_party_libraries:
+  google_fonts:
+    url:
+      fonts: https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap
+
 markdown: kramdown
 kramdown:
   input: GFM
@@ -35,8 +45,11 @@ plugins:
   - jekyll-scholar
 
 scholar:
+  first_name: [Yang]
+  last_name: [Hou]
   source: _bibliography
   bibliography: papers.bib
+  bibliography_template: bib
   sort_by: year
   order: descending
   group_by: year

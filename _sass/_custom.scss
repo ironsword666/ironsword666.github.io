@@ -1,0 +1,56 @@
+/* MIT-like blue accents and cleaner navigation */
+
+:root {
+  --global-theme-color: #004a8f;
+  --global-hover-color: #004a8f;
+  --global-hover-text-color: #ffffff;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #6db3ff;
+  --global-hover-color: #6db3ff;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#navbar {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 74, 143, 0.16);
+}
+
+html[data-theme="dark"] #navbar {
+  background: rgba(28, 28, 29, 0.92);
+  border-bottom: 1px solid rgba(78, 161, 255, 0.25);
+}
+
+#navbar .nav-link {
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-weight: 500;
+}
+
+#navbar .nav-item.active .nav-link {
+  background: rgba(0, 74, 143, 0.12);
+}
+
+html[data-theme="dark"] #navbar .nav-item.active .nav-link {
+  background: rgba(78, 161, 255, 0.18);
+}
+
+.publications .title .badge {
+  background-color: #004a8f;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+html[data-theme="dark"] .publications .title .badge {
+  background-color: #2b66a5;
+}
+
+.publications .links .btn i {
+  margin-right: 0.25rem;
+}

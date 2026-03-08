@@ -7,3 +7,23 @@
 
 "Vision":
   color: "#009f36"
+
+"ACL":
+  url: https://aclanthology.org/venues/acl/
+  color: "#8a1538"
+
+"ACL Findings":
+  url: https://aclanthology.org/venues/findings/
+  color: "#b25372"
+
+"CoNLL":
+  url: https://aclanthology.org/venues/conll/
+  color: "#1b4f8c"
+
+"COLING 2024":
+  url: https://aclanthology.org/venues/coling/
+  color: "#2b66a5"
+
+"COLING 2025":
+  url: https://aclanthology.org/venues/coling/
+  color: "#2b66a5"

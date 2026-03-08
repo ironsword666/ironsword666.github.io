@@ -9,7 +9,7 @@ profile:
   image: avatar.jpg
 
 news: true
-selected_papers: true
+selected_papers: false
 social: true
 ---
 
@@ -21,3 +21,20 @@ My research interests include:
 - semantic role labeling
 - Chinese NLP
 - large language models
+
+## Publications
+
+{% bibliography --group_by year %}
+
+## Talks
+
+- ACL 2025 Oral Presentation
+- Lab Seminar Talk
+
+## Services
+
+- Reviewer, ARR
+
+## Awards
+
+- Outstanding Academic Scholarship

@@ -39,7 +39,8 @@ jobs:
         run: |
           pwd
           ls -la
-          ls -la _site || true
+          ls -la _site
+          test -f _site/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4

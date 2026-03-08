@@ -1,0 +1,17 @@
+{% assign has_prev = false %}
+
+{% if site.socials.github_username %}
+  <a href="https://github.com/{{ site.socials.github_username }}" title="GitHub">GitHub</a>
+  {% assign has_prev = true %}
+{% endif %}
+
+{% if site.socials.scholar_userid %}
+  {% if has_prev %} · {% endif %}
+  <a href="https://scholar.google.com/citations?user={{ site.socials.scholar_userid }}" title="Google Scholar">Scholar</a>
+  {% assign has_prev = true %}
+{% endif %}
+
+{% if site.email and site.email != "YOUR_EMAIL" and site.email != "YOUR_EMAIL_HERE" %}
+  {% if has_prev %} · {% endif %}
+  <a href="mailto:{{ site.email }}" title="Email">Email</a>
+{% endif %}

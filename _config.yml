@@ -1,25 +1,16 @@
 title: Yang Hou
 first_name: Yang
 last_name: Hou
-email: YOUR_EMAIL_HERE
+email: YOUR_EMAIL
 description: Academic homepage of Yang Hou
 
 url: "https://ironsword666.github.io"
 baseurl: ""
 
-lang: en
-navbar_fixed: true
-footer_fixed: true
-search_enabled: false
-
 profile:
   align: right
   image: avatar.jpg
   image_circular: false
-  more_info: >
-    <p>PhD Student</p>
-    <p>School of Computer Science and Technology</p>
-    <p>Soochow University</p>
 
 socials:
   scholar_userid: 1G-PhgwAAAAJ
@@ -43,11 +34,6 @@ plugins:
 scholar:
   source: _bibliography
   bibliography: papers.bib
-  bibliography_template: bib
-  style: apa
-  locale: en
-  sort_by: year,month
+  sort_by: year
   order: descending
   group_by: year
-  group_order: descending
-  query: "@*"

@@ -6,4 +6,4 @@ nav: true
 nav_order: 2
 ---
 
-{% bibliography --group_by year --group_order descending %}
+{% bibliography --group_by year %}

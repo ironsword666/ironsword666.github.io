@@ -68,3 +68,23 @@ html[data-theme="dark"] .publications .title .badge {
 .publications .links .btn.icon-only i {
   margin-right: 0;
 }
+
+ol.bibliography .hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.15s ease;
+}
+
+ol.bibliography .hidden.open {
+  max-height: 100em;
+}
+
+ol.bibliography .conference-highlight {
+  margin-top: 0.1rem;
+  color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+ol.bibliography .conference-highlight .year {
+  opacity: 0.92;
+}

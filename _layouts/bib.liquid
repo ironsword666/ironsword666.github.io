@@ -48,20 +48,7 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">
-      {{ entry.title }}
-      {% if entry.abbr %}
-        {% assign badge_style = nil %}
-        {% if site.data.venues[entry.abbr] and site.data.venues[entry.abbr].color != blank %}
-          {% assign badge_style = site.data.venues[entry.abbr].color | prepend: 'background-color:' %}
-        {% endif %}
-        {% if site.data.venues[entry.abbr] and site.data.venues[entry.abbr].url %}
-          <a class="badge rounded ml-2 align-middle" {% if badge_style %}style="{{ badge_style }}"{% endif %} href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
-        {% else %}
-          <span class="badge rounded ml-2 align-middle" {% if badge_style %}style="{{ badge_style }}"{% endif %}>{{ entry.abbr }}</span>
-        {% endif %}
-      {% endif %}
-    </div>
+    <div class="title">{{ entry.title }}</div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -193,7 +180,7 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
+    <div class="periodical{% if entry.abbr %} conference-highlight{% endif %}">
       {{ periodical | strip }}
     </div>
     <div class="periodical">
@@ -214,7 +201,7 @@
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
       {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button"><i class="ai ai-arxiv"></i> arXiv</a>
+        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0 icon-only" role="button" title="arXiv"><i class="ai ai-arxiv"></i></a>
       {% endif %}
       {% if entry.hal %}
         <a href="https://hal.science/{{ entry.hal }}" class="btn btn-sm z-depth-0" role="button">HAL</a>
@@ -252,7 +239,7 @@
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-code"></i> Code</a>
+        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0 icon-only" role="button" title="Code"><i class="fa-solid fa-code"></i></a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
@@ -273,11 +260,11 @@
       {% endif %}
       {% if entry.url %}
         {% if entry.url contains 'aclanthology.org' %}
-          <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button"><i class="ai ai-acl"></i> ACL</a>
+          <a href="{{ entry.url }}" class="btn btn-sm z-depth-0 icon-only" role="button" title="ACL Anthology"><i class="ai ai-acl"></i></a>
         {% elsif entry.url contains 'arxiv.org' %}
-          <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button"><i class="ai ai-arxiv"></i> arXiv</a>
+          <a href="{{ entry.url }}" class="btn btn-sm z-depth-0 icon-only" role="button" title="arXiv"><i class="ai ai-arxiv"></i></a>
         {% else %}
-          <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-link"></i> Link</a>
+          <a href="{{ entry.url }}" class="btn btn-sm z-depth-0 icon-only" role="button" title="Paper link"><i class="fa-solid fa-link"></i></a>
         {% endif %}
       {% endif %}
     </div>

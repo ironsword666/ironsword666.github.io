@@ -54,3 +54,17 @@ html[data-theme="dark"] .publications .title .badge {
 .publications .links .btn i {
   margin-right: 0.25rem;
 }
+
+.publications .author .self-author {
+  color: var(--global-theme-color);
+  font-weight: 700;
+}
+
+.publications .links .btn.icon-only {
+  min-width: 2rem;
+  padding: 0.22rem 0.42rem;
+}
+
+.publications .links .btn.icon-only i {
+  margin-right: 0;
+}

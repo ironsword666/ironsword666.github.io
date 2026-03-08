@@ -53,3 +53,4 @@ scholar:
   sort_by: year
   order: descending
   group_by: year
+  group_order: descending

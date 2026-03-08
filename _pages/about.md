@@ -21,7 +21,7 @@ More broadly, I am interested in how linguistic structure can be modeled, induce
 
 ## Publications
 
-{% bibliography --group_by year %}
+{% bibliography --group_by year --group_order descending --sort_by year --order descending %}
 
 ## Talks
 
